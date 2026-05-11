@@ -137,3 +137,76 @@ display: inline-block;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
 }
+
+/* Mobile-first adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 1em;
+    margin: 8px 0;
+  }
+
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Buttons and links */
+  button, a {
+    font-size: 1em;
+    padding: 10px 14px;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Containers */
+  .container, .content {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Navigation */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
+
+  button, a {
+    font-size: 0.95em;
+    padding: 8px 12px;
+  }
+}
